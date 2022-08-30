@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout Page || devChallanges.io</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/devchallenges.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-logo">
+          <h1>Checkout</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="checkout">
+        <div class="container">
+          <div class="checkout-master">
+            <div class="checkout-menu">
+              <div class="cart cart-1">
+                <div class="product-banner">
+                  <img src="assets/images/photo1.png" alt="" />
+                </div>
+                <div class="product-detail">
+                  <h3>Vintage Backbag</h3>
+                  <div class="prices">
+                    <h4>$54.99</h4>
+                    <h5>$94.99</h5>
+                  </div>
+                  <div class="item">
+                    <button class="min">-</button>
+                    <span class="num">1</span>
+                    <button class="plus">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart cart-2">
+                <div class="product-banner">
+                  <img src="assets/images/photo2.png" alt="" />
+                </div>
+                <div class="product-detail">
+                  <h3>Levi Shoes</h3>
+                  <div class="prices">
+                    <h4>$74.99</h4>
+                    <h5>$124.99</h5>
+                  </div>
+                  <div class="item item-2">
+                    <button class="min-2">-</button>
+                    <span class="num-2">1</span>
+                    <button class="plus-2">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="amount">
+                <div class="shipping">
+                  <h3>Shipping</h3>
+                  <h3>$19</h3>
+                </div>
+                <div class="total">
+                  <h3>Total</h3>
+                  <h3>$148.98</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-checkout">
+              <form action="#">
+                <div class="contact-info title">
+                  <h2>Contact information</h2>
+                  <div class="mail">
+                    <h5>E-mail</h5>
+                    <div class="email">
+                      <input type="email" class="icon icon-1" placeholder="Enter your email..." required />
+                    </div>
+                  </div>
+                  <div class="mail">
+                    <h5>Phone</h5>
+                    <div class="phone">
+                      <input type="tel" class="icon icon-2" placeholder="Enter your phone..." required />
+                    </div>
+                  </div>
+                </div>
+                <div class="ship-address title">
+                  <h2 class="h2">Shipping address</h2>
+                  <div class="mail">
+                    <h5>Full name</h5>
+                    <div class="name">
+                      <input type="text" class="icon icon-3" placeholder="Your name.." required />
+                    </div>
+                  </div>
+                  <div class="mail">
+                    <h5>Address</h5>
+                    <div class="address">
+                      <input type="text" class="icon icon-4" placeholder="Your Address.." required />
+                    </div>
+                  </div>
+                  <div class="mail">
+                    <h5>City</h5>
+                    <div class="city">
+                      <input type="text" class="icon icon-5" placeholder="Your City.." required />
+                    </div>
+                  </div>
+                  <div class="country-postal">
+                    <div class="mail">
+                      <h5>Country</h5>
+                      <div class="country">
+                        <select name="country-name" class="countryname" required>
+                          <option value="0" selected>Your country..</option>
+                          <option value="1">Country A</option>
+                          <option value="2">Country B</option>
+                          <option value="3">Country C</option>
+                          <option value="4">Country D</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mail">
+                      <h5>Postal code</h5>
+                      <div class="postal">
+                        <input type="text" class="icon icon-7" placeholder="Your postal code.." required />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" class="box" />
+                  <p>Save this information for next time</p>
+                </div>
+                <div class="continue">
+                  <input type="submit" value="Continue" class="btn" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-master">
+          <p>
+            created by <strong><a href="#">Arufaki</a></strong> - devChallenges.io
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

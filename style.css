@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+
+:root {
+  --heading: #4e5150;
+  --paragraph: #333333;
+  --discount: #f2994a;
+  --mailheading: #4f4f4f;
+  --placeholder: #828282;
+  --bgco: #f2f2f2;
+  --bgbtn: #e0e0e0;
+  --default: #ffffff;
+  --footer: #bdbdbd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  max-width: 1024px;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 24px;
+  color: var(--heading);
+}
+
+header {
+  margin: 32px 0;
+}
+
+.checkout-menu {
+  background-color: var(--bgco);
+  border-radius: 12px;
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+h3 {
+  color: var(--heading);
+}
+
+.product-detail h3 {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  font-size: 14px;
+  padding-right: 15px;
+  line-height: 17px;
+  color: var(--discount);
+}
+
+h5 {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.prices h5 {
+  -webkit-text-decoration-line: line-through;
+  text-decoration-line: line-through;
+  color: var(--heading);
+}
+
+.item {
+  display: flex;
+  border: 1px solid var(--placeholder);
+  max-width: 130px;
+  border-radius: 12px;
+  padding: 12px;
+  justify-content: space-between;
+  margin: 35px 0 0;
+}
+
+button {
+  width: 25px;
+  font-size: 20px;
+  background-color: var(--bgbtn);
+  border: 0;
+  border-radius: 4px;
+  color: var(--placeholder);
+}
+
+.cart {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 30px 0 0 25px;
+}
+
+.product-banner img {
+  max-width: 130px;
+}
+
+.product-detail {
+  margin-right: 35px;
+}
+
+.amount {
+  margin-top: 86px;
+}
+
+.amount h3 {
+  font-size: 14px;
+  color: var(--paragraph);
+  line-height: 17px;
+}
+
+.shipping,
+.total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--footer);
+  margin: 0 25px;
+  padding: 12px 0 15px;
+}
+
+#contact {
+  margin-top: 40px;
+}
+
+.title h2 {
+  color: var(--paragraph);
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 40px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px 0 14px 34px;
+  border-radius: 10px;
+  color: var(--paragraph);
+  border: 1px solid var(--placeholder);
+  background-size: 15px !important;
+  background-position-x: 10px !important;
+}
+
+::placeholder,
+option,
+select {
+  color: var(--placeholder);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.icon-1 {
+  background: url(assets/svg/envelope-solid.svg) no-repeat left;
+}
+
+.icon-2 {
+  background: url(assets/svg/phone-solid.svg) no-repeat left;
+}
+
+.icon-3 {
+  background: url(assets/svg/circle-user-solid.svg) no-repeat left;
+}
+
+.icon-4 {
+  background: url(assets/svg/house-solid.svg) no-repeat left;
+}
+
+.icon-5 {
+  background: url(assets/svg/city-solid.svg) no-repeat left;
+}
+
+select {
+  background: url(assets/svg/earth-asia-solid.svg) no-repeat left;
+}
+
+.icon-7 {
+  background: url(assets/svg/envelopes-bulk-solid.svg) no-repeat left;
+}
+
+.mail {
+  margin-top: 15px;
+  flex: 1;
+}
+
+.mail h5 {
+  color: var(--mailheading);
+  padding-bottom: 5px;
+}
+
+.country-postal {
+  display: flex;
+}
+
+.checkbox {
+  display: flex;
+  margin-top: 20px;
+}
+
+.box {
+  width: 16px;
+  margin-right: 5px;
+}
+
+.checkbox p {
+  font-size: 10px;
+  color: var(--mailheading);
+  font-weight: 600;
+}
+
+.continue input[type="submit"] {
+  font-size: 16px;
+  font-weight: 600;
+  width: 165px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--discount);
+  color: var(--default);
+  margin: 20px 0;
+  float: right;
+}
+
+.footer-master p {
+  text-align: center;
+  color: #828282;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  padding-bottom: 20px;
+}
+
+.footer-master a {
+  color: #828282;
+}
+
+footer {
+  margin-top: 200px;
+}
+
+input,
+select:focus {
+  outline: none;
+}
+
+.country-postal {
+  display: flex;
+  gap: 15px;
+}
+
+option:checked {
+  color: var(--placeholder);
+}
+
+.btn:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+  cursor: pointer;
+}
